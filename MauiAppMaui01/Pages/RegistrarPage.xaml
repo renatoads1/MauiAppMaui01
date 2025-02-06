@@ -13,11 +13,13 @@
             Text="Registrar Usuário"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-        <ListView ItemsSource="{Binding users}">
+        <ListView 
+            BackgroundColor="White" 
+            
+            ItemsSource="{Binding users}">
             <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextCell Text="{Binding  Name}"/>
-
+                <DataTemplate >
+                    <TextCell TextColor="Black" Text="{Binding  Name}"/>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
